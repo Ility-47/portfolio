@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ilitya - FRONTEND</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <script src="/assets/js/script.js" defer></script>
+    <script src="https://kit.fontawesome.com/32815558c8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="block hello" data-index="0">
+            <div>    
+                <h2 class="hello__title">Привет<br /> Меня зовут Илья<br /> Вы попали в мое портфолио</h2>
+                <h6 class="hello__subtitle">В настоящее время я активно развиваюсь в направлении Frontend.
+                    А также ищу компанию или стартап, в которой я мог бы применить 
+                    свои навыки и получить работу. </h6>
+            </div>
+            <div class="wrapper">
+                <div class="instruct">
+                    <p>Для навигации по сайту можно использовать стрелки или WASD.</p>
+                </div>
+                <div class="strelki">
+                    <img src="/assets/images/strelki.png" alt="">
+                </div>
+            </div>
+            
+        </div>
+        
+        <div class="block about" data-index="1">
+            <div class="wrapper">
+                <h2 class="title">Обо мне</h2>
+                <div class="prod">Producted By Ilitya</div>
+            </div>
+            <div class="me">
+                <div class="me__img">
+                    <img src="/assets/images/me.jpg" alt="">
+                </div>
+                <div class="me__info">
+                    <p>Тут должна быть моя фотка, но я решил ее не ставить.</p>
+                    <p>Как вы уже поняли, я хочу найти работу. А этот сайт демонстрирует небольшую часть моих навыков.</p>
+                    <p>Я уверен, вы хотите узнать все подробно. Тогда вам надо нажать на глаз чуть ниже, и вы сможете ознакомиться с моим резюме.</p>
+                </div>
+            </div>
+            
+            <div class="wrapper">
+                <button class="nextSlide" onclick="nextSlide()"><i class="fa-solid fa-arrow-right"></i></button>
+                <div class="open" onclick="openHidden('about')">
+                    <img class="eye__close" src="/assets/images/eyec.png" alt="">
+                    <img class="eye__open" src="/assets/images/eyeo.png" alt="">
+                </div>
+            </div>
+        </div>
+        
+        <div class="block works" data-index="2">
+            <h2 class="title">Мои работы</h2>
+            <div class="wrapper__hover">
+                <div class="items">
+                    <div class="item" tabindex="1" style="background-image: url(assets/images/jedi.PNG)">
+                        <a href="https://ility-47.github.io/jedi/"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                 
+                    <div class="item" tabindex="1" style="background-image: url(assets/images/subvisual.PNG)">
+                        <a href="https://ility-47.github.io/subvisual/"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                    <div class="item" tabindex="1" style="background-image: url(assets/images/castaway.PNG)">
+                        <a href="https://ility-47.github.io/castaway/"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                    <div class="item" tabindex="1" style="background-image: url(assets/images/burning.PNG)">
+                        <a href="https://ility-47.github.io/burning/"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                    <div class="item" tabindex="1" style="background-image: url(assets/images/meta.PNG)">
+                        <a href="https://ility-47.github.io/meta/"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                    <div class="item" tabindex="1" style="background-image: url(assets/images/crypto.PNG)"></div>
+                </div>
+            </div>
+            <!-- Тут текст
+            <div class="works__text">
+                Стоит отметить, что большинтсво моих работ учебные. 
+                Но при создании учебных сайтов я всегда старался 
+                реализовывать интересные анимации или использовать 
+                новые для себя технологии. Надеюсь, скоро здесь появятся ваши заказы.
+            </div> -->
+            
+            <div class="wrapper">
+                <div class="like">
+                    <i class="fa-solid fa-thumbs-up"></i>
+                </div>
+                <div class="open" id="open" onclick="openHidden('works')">
+                    <img class="eye__close" src="/assets/images/eyec.png" alt="">
+                    <img class="eye__open" src="/assets/images/eyeo.png" alt="">
+                </div>
+            </div>
+        </div>
+        
+        <div class="block contacts" data-index="3">
+            <h2 class="title">Контакты</h2>
+            <div class="socials">
+                <h6>Жду ваши сообщения в социальных сетях:</h6>
+                <div class="socials__wrapper">
+                    <div class="socials__item">
+                        <a href="https://t.me/ILyTya " style="color: #0088cc;"><i class="fa-brands fa-telegram"></i></a>
+                        <div class="line" style="background-color: #0088cc;"></div>
+                    </div>
+                    <div class="socials__item">
+                        <a href="https://vk.com/lamer0" style="color:#4C75A3;"><i class="fa-brands fa-vk"></i></a>
+                        <div class="line" style="background-color: #4C75A3;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="form__feedback">
+                <h6>Либо заполните форму и я свяжусь с вами сам.</h6>
+                <form>
+                    <div class="form__data">
+                        <div class="form__wrapper">
+                            <input class="form__input" type="text" id="name" placeholder>
+                            <label class="form__label" for="name">Ваше имя</label>
+                        </div>
+                        <div class="form__wrapper">
+                            <input class="form__input" type="email" id="email" placeholder requireds>
+                            <label class="form__label" for="email">Ваша почта</label>
+                        </div>
+                    </div>
+                    <div class="form__text">
+                        <textarea class="form__textarea" type="mail" id="mail" placeholder></textarea>
+                        <label class="form__label" for="mail">Напишите ваше сообщение</label>
+                    </div>
+                    <button type="submit" class="form__button">Отправить</button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="block goodbye" data-index="4">
+            <h2>До свидания.</h2>
+            <div class="goodbye__links">
+                <div class="goodbye__link">
+                    <a href="https://t.me/ILyTya "><i class="fa-brands fa-telegram"></i></a>
+                    <div class="line"></div>
+                </div>
+                <div class="goodbye__link">
+                    <button onclick="copyEmail()"><i class="fa-solid fa-envelope"></i></button>
+                    <div class="line"></div>
+                </div>
+            </div>
+            <div class="message">Адрес почты скопирован в буфер обмена</div>
+        </div>
+
+    </div>
+
+    <div class="about__hidden hidden__block">
+        <div class="fon fon__about"></div>
+        <div class="about__hidden__container">
+            <h2 class="about__hidden__title">
+                О мне
+            </h2>
+            <div class="text">
+                <p>Меня зовут Итяксов Илья. В настоящее время я стремлюсь развивать свои навыки в сфере frontend разработки, используя современные технологии и подходы.</p>    
+                <p>На данный момент обучаюсь на 3 курсе Тульского государственного университета по программе “Информатика и вычислительная техника”.</p>
+                <p>Владею HTML, CSS, SASS, JS, REACT, BOOTSTRAP. Конечно же владею адаптивной версткой, также всегда стараюсь верстать так, чтобы попадать в зеленую зону Google PageSpeed и не видеть ошибок в W3C.</p>
+                <p>Имею небольшой навык работы на фрилансе. Но в данный момент меня больше интересует работа в команде на постоянной основе.</p>
+                <p>Свои работы я разместил на следующей странице. </p>
+            </div>
+            <div class="skills__title">
+                Мои скиллы
+            </div>
+            <div class="skills">
+                <div class="skill">
+                    <div class="skill__wrapper">
+                        <img src="/assets/images/html.svg" alt="">
+                        <div class="skill__name">HTML5</div>
+                        <div class="skill__description">
+                            Эта база, с которой я когда-то начал свое знакомство с фронтендом.
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill__wrapper">
+                        <img src="/assets/images/css.png" alt="">
+                        <div class="skill__name">CSS</div>
+                        <div class="skill__description">
+                            В CSS я погрузлся довольно на долго, всегда искал, как с его помощью можно сделать красивую анимацию.
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill__wrapper">
+                        <img src="/assets/images/js.png" alt="">
+                        <div class="skill__name">JS</div>
+                        <div class="skill__description">
+                            Чуть позднее начал использовать JavaScript, чтобы можно было сделать анимацию еще круче.
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill__wrapper">
+                        <img src="/assets/images/sass.png" alt="">
+                        <div class="skill__name">SASS</div>
+                        <div class="skill__description">
+                            Однажды увидел, что многие используют препроцессоры и решил попробовать SASS, вещь удобная, но лично я больше люблю чистый CSS.
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill__wrapper">
+                        <img src="/assets/images/react.png" alt="">
+                        <div class="skill__name">REACT</div>
+                        <div class="skill__description">
+                            React мне сразу понравился, с его помощью я написал пару тренировочных проектов. Пожалуй эта та технология, с которой я хотел бы работать профессионально.
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill__wrapper">
+                        <img src="/assets/images/sql.png" alt="">
+                        <div class="skill__name">SQL</div>
+                        <div class="skill__description">
+                            SQL я изучил в университете, не сказал бы, что мне нравится работать с БД, но я могу это делать.
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill__wrapper">
+                        <img src="/assets/images/voprosi.png" alt="">
+                        <div class="skill__name">Навык</div>
+                        <div class="skill__description">
+                            Пока тут ничего нет, но я уверен, что скоро я запишу сюда свой новый технический навык.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="works__hidden hidden__block">
+        <div class="fon fon__works"></div>
+    </div>
+</body>
+</html>
