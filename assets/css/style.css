@@ -257,7 +257,7 @@ body{
 
 .fon{
     cursor: url('../images/cursor2.png'), pointer;
-    background-image: url('/assets/images/me.jpg');
+    background-image: url('../images/me.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
