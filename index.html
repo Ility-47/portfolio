@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ilitya - FRONTEND</title>
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
-    <script src="/assets/js/script.js" defer></script>
+    <script src="assets/js/script.js" defer></script>
     <script src="https://kit.fontawesome.com/32815558c8.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -26,7 +26,7 @@
                     <p>Для навигации по сайту можно использовать стрелки или WASD.</p>
                 </div>
                 <div class="strelki">
-                    <img src="/assets/images/strelki.png" alt="">
+                    <img src="assets/images/strelki.png" alt="">
                 </div>
             </div>
             
@@ -39,7 +39,7 @@
             </div>
             <div class="me">
                 <div class="me__img">
-                    <img src="/assets/images/me.jpg" alt="">
+                    <img src="assets/images/me.jpg" alt="">
                 </div>
                 <div class="me__info">
                     <p>Тут должна быть моя фотка, но я решил ее не ставить.</p>
@@ -51,8 +51,8 @@
             <div class="wrapper">
                 <button class="nextSlide" onclick="nextSlide()"><i class="fa-solid fa-arrow-right"></i></button>
                 <div class="open" onclick="openHidden('about')">
-                    <img class="eye__close" src="/assets/images/eyec.png" alt="">
-                    <img class="eye__open" src="/assets/images/eyeo.png" alt="">
+                    <img class="eye__close" src="assets/images/eyec.png" alt="">
+                    <img class="eye__open" src="assets/images/eyeo.png" alt="">
                 </div>
             </div>
         </div>
@@ -93,8 +93,8 @@
                     <i class="fa-solid fa-thumbs-up"></i>
                 </div>
                 <div class="open" id="open" onclick="openHidden('works')">
-                    <img class="eye__close" src="/assets/images/eyec.png" alt="">
-                    <img class="eye__open" src="/assets/images/eyeo.png" alt="">
+                    <img class="eye__close" src="assets/images/eyec.png" alt="">
+                    <img class="eye__open" src="assets/images/eyeo.png" alt="">
                 </div>
             </div>
         </div>
@@ -116,7 +116,7 @@
             </div>
             <div class="form__feedback">
                 <h6>Либо заполните форму и я свяжусь с вами сам.</h6>
-                <form>
+                <form action="" id="add-form">
                     <div class="form__data">
                         <div class="form__wrapper">
                             <input class="form__input" type="text" id="name" placeholder>
@@ -172,7 +172,7 @@
             <div class="skills">
                 <div class="skill">
                     <div class="skill__wrapper">
-                        <img src="/assets/images/html.svg" alt="">
+                        <img src="assets/images/html.svg" alt="">
                         <div class="skill__name">HTML5</div>
                         <div class="skill__description">
                             Эта база, с которой я когда-то начал свое знакомство с фронтендом.
@@ -181,7 +181,7 @@
                 </div>
                 <div class="skill">
                     <div class="skill__wrapper">
-                        <img src="/assets/images/css.png" alt="">
+                        <img src="assets/images/css.png" alt="">
                         <div class="skill__name">CSS</div>
                         <div class="skill__description">
                             В CSS я погрузлся довольно на долго, всегда искал, как с его помощью можно сделать красивую анимацию.
@@ -190,7 +190,7 @@
                 </div>
                 <div class="skill">
                     <div class="skill__wrapper">
-                        <img src="/assets/images/js.png" alt="">
+                        <img src="assets/images/js.png" alt="">
                         <div class="skill__name">JS</div>
                         <div class="skill__description">
                             Чуть позднее начал использовать JavaScript, чтобы можно было сделать анимацию еще круче.
@@ -199,7 +199,7 @@
                 </div>
                 <div class="skill">
                     <div class="skill__wrapper">
-                        <img src="/assets/images/sass.png" alt="">
+                        <img src="assets/images/sass.png" alt="">
                         <div class="skill__name">SASS</div>
                         <div class="skill__description">
                             Однажды увидел, что многие используют препроцессоры и решил попробовать SASS, вещь удобная, но лично я больше люблю чистый CSS.
@@ -208,7 +208,7 @@
                 </div>
                 <div class="skill">
                     <div class="skill__wrapper">
-                        <img src="/assets/images/react.png" alt="">
+                        <img src="assets/images/react.png" alt="">
                         <div class="skill__name">REACT</div>
                         <div class="skill__description">
                             React мне сразу понравился, с его помощью я написал пару тренировочных проектов. Пожалуй эта та технология, с которой я хотел бы работать профессионально.
@@ -217,7 +217,7 @@
                 </div>
                 <div class="skill">
                     <div class="skill__wrapper">
-                        <img src="/assets/images/sql.png" alt="">
+                        <img src="assets/images/sql.png" alt="">
                         <div class="skill__name">SQL</div>
                         <div class="skill__description">
                             SQL я изучил в университете, не сказал бы, что мне нравится работать с БД, но я могу это делать.
@@ -226,7 +226,7 @@
                 </div>
                 <div class="skill">
                     <div class="skill__wrapper">
-                        <img src="/assets/images/voprosi.png" alt="">
+                        <img src="assets/images/voprosi.png" alt="">
                         <div class="skill__name">Навык</div>
                         <div class="skill__description">
                             Пока тут ничего нет, но я уверен, что скоро я запишу сюда свой новый технический навык.
@@ -241,3 +241,9 @@
     </div>
 </body>
 </html>
+
+<!-- 
+git remote add origin https://github.com/Ility-47/portfolio.git
+git branch -M main
+git push -u origin main
+-->

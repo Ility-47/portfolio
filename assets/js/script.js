@@ -130,3 +130,46 @@ const copyEmail = () =>{
     setTimeout(() => {document.querySelector('.message').style.cssText = `opacity:0;`}, 700)
 }
     
+
+// Валидация для формы
+
+const validation = (form) =>{
+    let result = true
+
+    const createError = (input, text) =>{
+        const parent = input.parentNode
+        const errorLabel = document.createElement('label')
+        errorLabel.classList.add('error__label')
+        errorLabel.textContent = text
+        parent.classList.add("error")
+        parent.append(errorLabel)
+    }
+
+    const removeError = (input) =>{
+        const parent = input.parentNode
+        if(parent.classList.contains('error')){
+            parent.querySelector('.error__label').remove()
+            parent.classList.remove('error')
+        }
+    }
+
+    document.querySelectorAll('.form__input').forEach(item =>{
+        removeError(item)
+         if(item.value == ""){
+            createError(item, "Поле пусто, пожалуйста заполните его")
+            result = false
+        }
+    })
+
+    return result
+}
+
+document.getElementById('add-form').addEventListener('submit', (event) =>{
+    event.preventDefault()
+    console.log("аэаэаэаээ")
+    if(validation(this)){
+        alert("Форма валидна")
+    }else{
+        alert("Форма инвалдидна, спокойнее господа либералы")
+    }    
+})
