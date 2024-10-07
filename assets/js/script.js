@@ -72,11 +72,11 @@ let klav = (event) =>{
     if (isInputActive) {
         return
     }
-    if (event.code == 'ArrowRight' || event.code == 'KeyD' && rotateSlide != -360) {
+    if ((event.code == 'ArrowRight' || event.code == 'KeyD') && rotateSlide != -360) {
         rotateSlide -= 90
         scaleSlide *= 1.61804
         current = Number(current) + 1
-    } else if (event.code == 'ArrowLeft' || event.code == 'KeyA' && rotateSlide != 0) {
+    } else if ((event.code == 'ArrowLeft' || event.code == 'KeyA') && rotateSlide != 0) {
         rotateSlide += 90
         scaleSlide /= 1.61804
         current = Number(current) - 1
@@ -161,15 +161,28 @@ const validation = (form) =>{
         }
     })
 
+    const textarea = document.querySelector('.form__textarea')
+    removeError(textarea)
+    if(textarea.value == ""){
+        createError(textarea, "Напишите по какому поводу вы хотите связаться")
+        result = false
+    }
+
+    formInputs.forEach(item =>{
+        item.addEventListener('click', ()=>{
+            removeError(item)
+            document.querySelector('.form__button').disabled = false
+        })
+    })
+
     return result
 }
 
 document.getElementById('add-form').addEventListener('submit', (event) =>{
     event.preventDefault()
-    console.log("аэаэаэаээ")
     if(validation(this)){
-        alert("Форма валидна")
+        document.querySelector('.form__button').disabled = false
     }else{
-        alert("Форма инвалдидна, спокойнее господа либералы")
+        document.querySelector('.form__button').disabled = true
     }    
 })

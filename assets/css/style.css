@@ -392,6 +392,18 @@ body{
     }
 }
 
+/*Тут скртый блок с работами*/
+
+.works__wrapper{
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: calc(var(--index) * 1);
+}
+
+
+
 /*Контакты*/
 
 .contacts{
@@ -512,6 +524,11 @@ form{
     border-radius: 10px;
 }
 
+.form__button:disabled{
+    opacity: .7;
+    border-color: red;
+}
+
 .form__button:hover{
     background-color: #8689AC;
     color: #2F3148;
@@ -531,6 +548,10 @@ form{
     color: red;
     top: calc(var(--index) * 2);
     left: 4px;
+}
+
+.form__text .error__label{
+    top: 25.5vh;   
 }
 
 /*GOODBYE*/
