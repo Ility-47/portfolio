@@ -264,12 +264,21 @@ body{
 
 .fon{
     cursor: url('../images/cursor2.png'), pointer;
-    background-image: url('../images/me.jpg');
+    
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     width: 100%;
     height: 80vh;
+}
+
+.fon__about{
+    background-image: url('../images/me.jpg');
+}
+
+.fon__works{
+    background-image: url('../images/collage.jpg');
+    opacity: .5;
 }
 
 .about__hidden__container{
@@ -285,9 +294,11 @@ body{
 }
 
 .text{
+    line-height: 150%;
     width: 80%;
     margin: 0 auto;
     text-align: justify;
+    font-size: calc(var(--index) * .65);
 }
 
 .text p{
@@ -417,6 +428,8 @@ body{
 }
 
 .work__wrapper{
+    width: 100%;
+    height: 100%;
     background-color: #1f1e1cdf;
     opacity: .4;
     transition: .7s;
