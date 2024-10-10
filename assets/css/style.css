@@ -800,3 +800,53 @@ form{
     z-index: 100;
     margin: 0 .45vw;
 }
+
+
+/*Для мобилок*/
+
+.mobile__container{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+    background-color: #1f1e1c;
+    color: #e8e8e8;
+    justify-content: center;
+    display: none;
+
+}
+
+.mobile__wrapper{
+    height: 100vh;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.mobile__wrapper img{
+    width: 40%;
+    margin:  0 auto;
+}
+
+.mobile__title{
+    font-size: calc(var(--index) * 1.5);
+    font-weight: 700;
+}
+
+.mobile__subtitle{
+    font-size: calc(var(--index) * .7);
+    font-weight: 300;
+    color: #e8e8e8d5;
+    line-height: 200%;
+}
+
+@media (width <= 830px) {
+    .mobile__container{
+        display: flex;
+    }
+    .container{
+        display: none;
+    }
+}

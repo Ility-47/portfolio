@@ -40,8 +40,8 @@ const changeColor = (numer) =>{
 
 //срабатывает при нажатии на кнопку, но уже не работает
 let nextSlide = () =>{
-    rotateSlide -= 90
-    scaleSlide *= 1.61804
+    rotateSlide = -180
+    scaleSlide = 2.61805
     container.style.cssText = `transform: rotate(${rotateSlide}deg) scale(${scaleSlide});`  
     current++
 }
@@ -55,6 +55,7 @@ let goToSlide = (index) =>{
         scaleSlide *=  Math.pow(1.61804, currentIndex)
         container.style.cssText = `transform: rotate(${rotateSlide}deg) scale(${scaleSlide});`
         current = index
+        changeColor(current)
     }
 }
 window.addEventListener("click", () =>{
@@ -206,7 +207,7 @@ function sendFeedback(feedback) {
     })
     .catch((error) => {
       console.error("Ошибка:", error);
-      alert("Произошла ошибка. Пожалуйста, попробуйте еще раз.");
+      alert("Произошла ошибка. Пока что форма не подключена к серверу.");
     });
 }
 
