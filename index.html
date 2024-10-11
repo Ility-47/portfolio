@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,7 +16,7 @@
     <div class="container">
         <div class="block hello" data-index="0">
             <div>    
-                <h2 class="hello__title">Привет<br /> Меня зовут Илья<br /> Вы попали в мое портфолио</h2>
+                <h2 class="hello__title">Привет<br> Меня зовут Илья<br> Вы попали в мое портфолио</h2>
                 <h6 class="hello__subtitle">В настоящее время я активно развиваюсь в направлении Frontend.
                     А также ищу компанию или стартап, в которой я мог бы применить 
                     свои навыки и получить работу. </h6>
@@ -114,19 +114,19 @@
             </div>
             <div class="form__feedback">
                 <h6>Либо заполните форму и я свяжусь с вами сам.</h6>
-                <form action="" id="add-form">
+                <form action="server.js" id="add-form">
                     <div class="form__data">
                         <div class="form__wrapper">
                             <input class="form__input" type="text" id="name" name="name" placeholder>
                             <label class="form__label" for="name">Ваше имя</label>
                         </div>
                         <div class="form__wrapper">
-                            <input class="form__input" type="email" id="email" name="email" placeholder requireds>
+                            <input class="form__input" type="email" id="email" name="email" placeholder required>
                             <label class="form__label" for="email">Ваша почта</label>
                         </div>
                     </div>
                     <div class="form__text">
-                        <textarea class="form__textarea" type="mail" id="message" name="message" placeholder></textarea>
+                        <textarea class="form__textarea" id="message" name="message" placeholder></textarea>
                         <label class="form__label" for="message">Напишите ваше сообщение</label>
                     </div>
                     <button type="submit" class="form__button">Отправить</button>
@@ -362,12 +362,4 @@
     </div>
 </body>
 </html>
-
-<!-- 
-
-git remote add origin https://github.com/Ility-47/portfolio.git
-git branch -M main
-git push -u origin main
-    тест
--->
 
